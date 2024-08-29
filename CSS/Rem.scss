@@ -1,0 +1,280 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CL:wght@100..400&family=Playwrite+HU:wght@100..400&display=swap');
+:root{
+    --primary-color: #007AF3;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F3F3F3;
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+.menu-open, .menu-exit{
+    display: none;
+}
+//  H E A D E R / N A V
+#main-header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px ;
+    margin: 40px 0px 80px 0px;
+    border: 1px solid red;
+
+    // .container{
+    // margin: 0px auto;
+    //  width: 1000px;
+    a.logo{
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 6px;
+        margin-left: 15px;
+        border: 1px solid greenyellow;
+    span{
+        color: var(--primary-color);
+    }
+    }
+    nav.main-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .primary-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: content-box;
+        margin: 0px 200px;
+        border: 1px solid orange;
+        li a{
+            margin: 0px 20px;
+            border: 1px solid #4444;
+            &:hover{
+                color: #007AF3;
+             } 
+        }
+    }
+    .secondary-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 200px;
+        border: 1px solid purple;
+        width: 270px;
+        li a{
+            margin: 0px 20px;  
+            border: 1px solid #4444;
+         &:hover{
+            color: #007AF3;
+         }   
+        }
+        .premium-cta {
+            color: var(--primary-color);
+            border: 3px solid var(--primary-color);
+            padding: 10px 10px;
+            font-weight: bold;
+            border-radius: 5em;
+            
+            // margin-top: -.2em;
+            &:hover {
+                background: var(--primary-color);
+                color: white;
+            }
+        }
+    }
+}
+
+                //   H E R O  S E C T I O N
+                .hero{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 100px;
+
+                    .left-col{
+                        margin-top: 60px;
+                        text-align: center;
+                        .nit-grit{
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: gray;
+                            letter-spacing: .3em;
+                            margin-bottom: 10px;
+                           }
+                        h1{
+                            font-size: 2.5em;
+                            line-height: 1.3em;
+                            margin-top: 1em;
+                            margin-bottom: 10px;
+                         }
+                         .watch-try{
+                            margin-top: 35px;
+
+                            .try-button{
+                                background-color: var(--primary-color);
+                                color: white;
+                                padding: 20px 30px;
+                                font-weight: bold;
+                                border-radius: 5em;
+
+                                &:hover{
+                                    background-color:#F3F3F3;
+                                    color: var(--primary-color);
+                                    border: 1px solid var(--primary-color);
+                                }
+                            }
+                                .watch-cta{
+                                    margin-left: 10px; 
+                                             
+                                         }
+                         }
+                     }
+                    .right-col{
+                            img{
+                            width: 300px;
+                            }  
+                        }   
+                }
+                // F E A T U R E S S E C T I O N
+                section.features-section{
+                    padding: 20px;
+                    margin: 120px 0px 0px 0px;
+                    background-color: #20272E;
+                    color: white;
+                    width: 100%;
+                    height:500px;
+                    position: relative;
+                    
+                    ul{
+                        padding-left: 80px;
+                        margin-top: 100px;
+                    }
+                    li{
+                        margin-bottom: 30px;
+                        margin-left: 8em;
+                        font-size: 1.2em;
+                        position: relative;
+                       
+                        &::before{
+                            content: '';
+                            left: -2em;
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url('../images/bullet.svg');
+                            background-size: contain;
+                            margin-right: .5em;
+                        }
+                    }
+                    .phone-pic{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        bottom: -3em;
+
+                        img{
+                         width: 380px; 
+                           
+                        }
+                    }
+                }
+                // F E E D B A C K - S E C T I O N 
+                .feedback-section{
+                    background-color: var(--primary-color);
+                    padding: 30px;
+                    .feedback{
+                        background-color:#006BD6;
+                        width: 50%;
+                        color: white;
+                        padding: 20px;
+                        margin: auto;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        text-align: center;
+                       
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            border: 5px solid #006BD6;
+                            border-radius: 50%;
+                            margin-top: -4.5em;
+                        }
+                        blockquote{
+                            padding: 10px 0px;
+                        }     
+                        cite{
+                            padding: 10px 0px;
+                        }                  
+                        }
+                    }
+                    // C O N T A C T - S E C T I O N
+            .contact-section{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 35px;
+                .contact-left{
+                            label{
+                                display: block;
+                                font-size: 1.2em;
+                                margin-bottom: .5em;  
+                            }
+                            input,textarea {
+                                width: 100%;
+                                padding:5px;
+                                margin-bottom: 1em;
+                                border-radius: .3em;
+                                border: 1px solid gray;
+                                box-sizing: border-box;
+                            }
+
+                            }
+                            input[type = "submit"]{
+                                display: inline-block;
+                                background-color: var(--primary-color);
+                                color: white;
+                                font-weight: bold;
+                                font-size: 1.2em;
+                                border: none;
+                                margin-bottom: 5em;
+                                border-radius: 5em;
+                                padding: .8em 2em;
+                                cursor: pointer;
+                                width: unset;
+
+                                &:hover{
+                                    background-color:#F3F3F3;
+                                    color: var(--primary-color);
+                                    border: 1px solid var(--primary-color);
+                                }
+                            }
+
+                            }
+                            
+                            .contact-right{
+                               
+                            iframe{
+                                height: 500px;
+                            }
+
+            }
+                        
+                    
+                 
