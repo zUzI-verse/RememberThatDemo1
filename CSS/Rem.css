@@ -10,7 +10,8 @@
 
 body {
   background-color: #F3F3F3;
-  margin: 0px;
+  width: 100vw;
+  height: 100vh;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400px;
@@ -40,7 +41,6 @@ ul {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: 20px 20px;
   margin: 40px 0px 80px 0px;
   border: 1px solid red;
@@ -251,4 +251,19 @@ section.features-section .phone-pic img {
 
 .contact-right iframe {
   height: 500px;
+}
+
+@media screen and (max-width: 380px) {
+  #main-header {
+    display: block;
+  }
+  .menu-open {
+    display: block !important;
+    width: 100px;
+    height: 100px;
+    border: 1px solid 0;
+  }
+  .menu-exit {
+    display: block !important;
+  }
 }/*# sourceMappingURL=Rem.css.map */
