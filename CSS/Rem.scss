@@ -67,7 +67,7 @@ ul{
         li a{
             margin: 0px 20px;
             &:hover{
-                color: #007AF3;
+                color:  var(--primary-color);
              } 
         }
     }
@@ -86,7 +86,8 @@ ul{
          }   
         }
         .premium-cta {
-            color: var(--primary-color);
+            color: whitesmoke;
+            background: var(--primary-color);
             border: 3px solid var(--primary-color);
             padding: 10px 10px;
             font-weight: bold;
@@ -94,8 +95,9 @@ ul{
             
             // margin-top: -.2em;
             &:hover {
-                background: var(--primary-color);
-                color: white;
+                color: var(--primary-color);
+                background: whitesmoke;
+                 border: 3px solid whitesmoke;
             }
         }
     }
@@ -137,11 +139,11 @@ ul{
                                     background-color:#F3F3F3;
                                     color: var(--primary-color);
                                     border: 1px solid var(--primary-color);
+                                    
                                 }
                             }
                                 .watch-cta{
-                                    margin-left: 10px; 
-                                             
+                                    margin-left: 15px; 
                                          }
                          }
                      }

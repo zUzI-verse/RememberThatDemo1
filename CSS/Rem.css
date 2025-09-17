@@ -69,7 +69,7 @@ ul {
   margin: 0px 20px;
 }
 #main-header .primary-nav li a:hover {
-  color: #007AF3;
+  color: var(--primary-color);
 }
 #main-header .secondary-nav {
   display: flex;
@@ -85,15 +85,17 @@ ul {
   color: #007AF3;
 }
 #main-header .secondary-nav .premium-cta {
-  color: var(--primary-color);
+  color: whitesmoke;
+  background: var(--primary-color);
   border: 3px solid var(--primary-color);
   padding: 10px 10px;
   font-weight: bold;
   border-radius: 5em;
 }
 #main-header .secondary-nav .premium-cta:hover {
-  background: var(--primary-color);
-  color: white;
+  color: var(--primary-color);
+  background: whitesmoke;
+  border: 3px solid whitesmoke;
 }
 
 .hero {
@@ -134,7 +136,7 @@ ul {
   border: 1px solid var(--primary-color);
 }
 .hero .left-col .watch-try .watch-cta {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .hero .right-col img {
   width: 300px;
