@@ -31,12 +31,7 @@ ul{
 .menu-open, .menu-exit{
     display: none;
 }
-// .menu-open{
-//     display: block!important;
-//     width: 100px;
-//     height: 100px;
-//     border: 1px solid red($color: #000000);
-// }
+
 //  H E A D E R / N A V
 #main-header{
     display: flex;
@@ -44,18 +39,16 @@ ul{
     justify-content: space-between;
     align-items: center;  
     padding: 20px 20px ;
-    margin: 40px 0px 80px 0px;
-    border: 1px solid red;
+    margin: 40px 0px 0px 0px;
+    width: auto;
 
-    // .container{
-    // margin: 0px auto;
-    //  width: 1000px;
+
     a.logo{
         font-size: 23px;
         font-weight: bold;
         margin-top: 6px;
         margin-left: 15px;
-        border: 1px solid greenyellow;
+        
     span{
         color: var(--primary-color);
     }
@@ -69,11 +62,10 @@ ul{
         justify-content: space-between;
         align-items: center;
         box-sizing: content-box;
-        margin: 0px 200px;
-        border: 1px solid orange;
+        margin: 0px ;
+       
         li a{
             margin: 0px 20px;
-            border: 1px solid #4444;
             &:hover{
                 color: #007AF3;
              } 
@@ -83,12 +75,12 @@ ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0px 200px;
-        border: 1px solid purple;
+        margin: 0px;
+       
         width: 270px;
         li a{
             margin: 0px 20px;  
-            border: 1px solid #4444;
+        
          &:hover{
             color: #007AF3;
          }   
